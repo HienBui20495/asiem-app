@@ -1,0 +1,63 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-content: center;
+}
+.header-top {
+    background-color: rgb(49, 49, 49);
+
+    font-size: 12px;
+    padding: 8px;
+}
+.header-top a {
+    color: #fff;
+}
+.header-top .header-top-right {
+    text-align: right;
+    align-items: center;
+}
+.header-top .header-top-right i {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.header-top .header-top-right a {
+    margin-right: 10px;
+}
+.header-top .header-top-right a:hover {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.header-top .header-top-right a:hover i {
+    color: #ff0000;
+}
+.header-top .header-top-left {
+    text-align: left;
+}
+.header-top .header-top-left a {
+    margin-right: 10px;
+}
+.header-top .lnr {
+    display: none;
+}
+div.header-top {
+    height: 30px;
+}
+#header {
+    padding: 0px 0px 10px 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+#header {
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.9);
+}
