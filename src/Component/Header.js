@@ -1,7 +1,9 @@
 import React from "react";
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Grid, Row, Col } from 'react-bootstrap';
 import '../Styles/Header.css';
 import '../Styles/General.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 class Header extends React.Component {
     buidTopHeader() {
@@ -9,27 +11,28 @@ class Header extends React.Component {
         content.push(
            
             <div key="HeaderTop" className="header-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-sm-6 col-4 header-top-left">
-                                <div className="d-flex flex-row no-padding mt-0">
-                                        <div className="p-2 bd-highlight"><p className="text-white">Language</p></div>
-                                        <div className="p-2 bd-highlight">
-                                            <select className="language-select">
-                                                <option selected value="0">Tiếng Việt</option>
+                <Grid>
+                    <Row>
+                        <Col lg={6} sm={6} xs={4}>
+                        
+                                <div className="pull-left">
+                                        <span className="text-white">Language</span>
+                                    
+                                            <select className="language-select ml-5">
+                                                <option value="0">Tiếng Việt</option>
                                                 <option value="1">日本語</option>
                                                 <option value="2">English</option>
                                               </select>
-                                        </div>
+                                    
                                 </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6 col-8 header-top-right no-padding">  
-                            <a href="#"> <i className="fas fa-phone"> +84 28 3526 8875</i></a>
-                            <a href="#"> <i className="fas">FAX: +84 28 3526 8876</i></a>
-                            <a href="#"> <i className="fas fa-envelope"> hr-info@asiem.asia</i></a> 
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                        <Col lg={6} sm={6} xs={8}  className="header-top-right no-padding">  
+                            <a className="icon" href="#"> <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> +84 28 3526 8875</a>
+                            <a className="icon" href="#"> <i className="fas">FAX: +84 28 3526 8876</i></a>
+                            <a className="icon" href="#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> hr-info@asiem.asia</a> 
+                        </Col>
+                    </Row>
+                </Grid>
             </div>
         
         )

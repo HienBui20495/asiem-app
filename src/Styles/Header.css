@@ -33,7 +33,7 @@
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.header-top .header-top-right a:hover i {
+.header-top .header-top-right a:hover .icon {
     color: #ff0000;
 }
 .header-top .header-top-left {
