@@ -1,5 +1,5 @@
 /*Fontface*/
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,600|Roboto:400,500,500i");
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Roboto:400,400i,500,500i,700');
 
 h1, h2, h3, h4, h5, h6 {
     font-family:"Rajdhani", sans-serif;
@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em !important;
     margin-bottom: 0;
     margin-top: 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0;
@@ -18,15 +18,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, .h1 {
     font-size: 36px;
+    text-transform: uppercase;
 }
 h2, .h2 {
     font-size: 30px;
+    text-transform: uppercase;
 }
 h3, .h3 {
     font-size: 24px;
+    text-transform: uppercase;
 }
 h4, .h4 {
     font-size: 18px;
+    text-transform: uppercase;
 }
 h5, .h5 {
     font-size: 16px;
@@ -101,6 +105,9 @@ td, th {
 }
 .mt-20 {
     margin-top: 20px;
+}
+.mt-24 {
+    margin-top: 24px;
 }
 .mt-25 {
     margin-top: 25px;
@@ -554,12 +561,23 @@ h1, h2, h3, h4, h5, h6 {
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
     color: #777;
 }
+/*---Button---*/
+.button {
+    background-color:rgb(200, 0, 0); 
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 .button-area {
-    background: #fff;
+    background: rgb(200, 0, 0);
 }
 .button-area .border-top-generic {
     padding: 70px 15px;
-    border-top: 1px dotted #eee;
+    border-top: 1px dotted rgb(200, 0, 0);
 }
 .button-group-area .genric-btn {
     margin-right: 10px;
@@ -571,4 +589,10 @@ h1, h2, h3, h4, h5, h6 {
 .no-padding {
     padding-left: 0px;
     padding-right: 0px;
+}
+.text-box {
+    width: 800px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }

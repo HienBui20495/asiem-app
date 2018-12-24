@@ -1,0 +1,38 @@
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-top {
+    font-size: 12px;
+    padding: 8px;
+}
+.header-top .header-top-right {
+    text-align: right;
+}
+.header-top .header-top-right i {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.header-top .header-top-right a {
+    margin-right: 10px;
+}
+.header-top .header-top-right a:hover {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.header-top .header-top-right a:hover i {
+    color: #c6b069;
+}
+.header-top .header-top-left {
+    text-align: left;
+}
+.header-top .header-top-left a {
+    margin-right: 10px;
+}
+.header-top .lnr {
+    display: none;

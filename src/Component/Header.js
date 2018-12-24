@@ -1,7 +1,7 @@
 import React from "react";
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Grid, Row, Col } from 'react-bootstrap';
 import '../Styles/Header.css';
-import '../Styles/General.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,6 @@ class Header extends React.Component {
     buidTopHeader() {
         let content =[];
         content.push(
-           
             <div key="HeaderTop" className="header-top">
                 <Grid>
                     <Row>
@@ -42,28 +41,28 @@ class Header extends React.Component {
         return (
             <div>
                 {this.buidTopHeader()}
-            <Navbar>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                    <a href="#home">React-Bootstrap</a>
-                    </Navbar.Brand>
-                </Navbar.Header>
-                <Nav>
-                    <NavItem eventKey={1} href="#">
-                    Link
-                    </NavItem>
-                    <NavItem eventKey={2} href="#">
-                    Link
-                    </NavItem>
-                    <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                    <MenuItem eventKey={3.1}>Action</MenuItem>
-                    <MenuItem eventKey={3.2}>Another action</MenuItem>
-                    <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey={3.4}>Separated link</MenuItem>
-                    </NavDropdown>
-                </Nav>
-            </Navbar>
+                <Navbar>
+                    <Navbar.Header>
+                        <Navbar.Brand>
+                        <a href="#home"><img src="images/logo.png"/></a>
+                        </Navbar.Brand>
+                    </Navbar.Header>
+                    <Nav>
+                        <NavItem eventKey={1} href="#">
+                        Link
+                        </NavItem>
+                        <NavItem eventKey={2} href="#">
+                        Link
+                        </NavItem>
+                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                        <MenuItem eventKey={3.1}>Action</MenuItem>
+                        <MenuItem eventKey={3.2}>Another action</MenuItem>
+                        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey={3.4}>Separated link</MenuItem>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar>
             </div>
         )
     }

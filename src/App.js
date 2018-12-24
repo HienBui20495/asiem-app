@@ -7,6 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 import './App.css';
+import './Styles/General.css';
 
 class App extends Component {
   render() {

@@ -11,6 +11,7 @@ const Router = () => (
         <Suspense fallback = { <div> </div>}>
             <Switch>
                 <Route exact path ="/" component ={HomePage}/>
+                
             </Switch>
         </Suspense>
     </BrowserRouter>
