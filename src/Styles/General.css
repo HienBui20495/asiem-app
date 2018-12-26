@@ -493,7 +493,8 @@ td, th {
     bottom: 0;
 }
 .container.fullwidth {
-    width: 100%}
+    width: 100%;
+}
 .container.no-padding {
     padding-left: 0;
     padding-right: 0;

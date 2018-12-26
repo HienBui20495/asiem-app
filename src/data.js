@@ -9,11 +9,53 @@ module.exports = {
     },
     getElectrical: () => {
         return {
-            title: "Electrical Design",
             data: [
-                {img:"images/Company.jpg", title: "", description:""},
-                {img:"", title: "", description:""},
-                {img:"images/Company.jpg", title: "", description:""}
+                {
+                    img:"images/electric-tower.png", 
+                    title: "ELECTRICAL DESIGN", 
+                    description:"Ut aliquam orci ac ullamcorper pellentesque. Ut aliquet, justo a porttitor pretium, velit lacus pretium nulla, sed auctor sem tortor nec urna."
+                },
+                {
+                    img:"images/Mechanical-gear.png",
+                    title: "MECHANICAL DESIGN",
+                    description:"Ut aliquam orci ac ullamcorper pellentesque. Ut aliquet, justo a porttitor pretium, velit lacus pretium nulla, sed auctor sem tortor nec urna."
+                },
+                {
+                    img:"images/Design-tablet.png",
+                    title: "GRAPHIC DESIGN",
+                    description:"Ut aliquam orci ac ullamcorper pellentesque. Ut aliquet, justo a porttitor pretium, velit lacus pretium nulla, sed auctor sem tortor nec urna."
+                }
+            ]
+        }
+    },
+    getProject: () => {
+        return {
+            title: "Morbi eget elit nec velit lacinia dictum. Integer cursus purus in dui molestie eleifend. Proin laoreet faucibus rutrum. Sed ut ex at massa imperdiet porttitor vitae sed ante. Nam quis odio a nulla elementum maximus. Fusce blandit ullamcorper velit. Etiam sodales lectus mattis libero porttitor, sed porta lorem eleifend. Proin elit sapien, aliquam non porta vel, imperdiet a mauris. Nulla facilisi. Morbi egestas eleifend nisi sit amet ornare. In aliquam velit vel mauris facilisis, ut pharetra sem sagittis.",
+            data: [
+                {
+                    title: "Donec aliquam et nunc fermentum luctus.",
+                    description: "",
+                    tag: "",
+                    date: ""
+                },
+                {
+                    title: "Nulla ut dolor quis purus dignissim.",
+                    description: "",
+                    tag: "",
+                    date: ""
+                },
+                {
+                    title: "Aenean ac ullamcorper risus, nec dignissim neque.",
+                    description: "",
+                    tag: "",
+                    date: ""
+                },
+                {
+                    title: "Pellentesque ut consequat felis.",
+                    description: "",
+                    tag: "",
+                    date: ""
+                },
             ]
         }
     }
