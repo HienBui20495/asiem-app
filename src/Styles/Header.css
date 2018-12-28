@@ -7,9 +7,15 @@
     margin-left: -15px;
     align-content: center;
 }
+.header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+/*---Header Top----*/
 .header-top {
     background-color: rgb(49, 49, 49);
-
     font-size: 12px;
     padding: 8px;
 }
@@ -50,16 +56,22 @@
 div.header-top {
     height: 30px;
 }
-#header {
-    padding: 0px 0px 10px 0px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 997;
+
+/*----Main Header----*/
+.main-header {
+    height: 70px;
+    background-color:#29292999 !important;
+    width: 100% !important;
+    background-image: none !important;
+    border:0 !important;
 }
-#header {
-    transition: all 0.5s;
-    background-color: rgba(0, 0, 0, 0.9);
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
 }
+@media (min-width: 768px) {
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -15px;
+        padding: 5px !important;
+    }
+}
+

@@ -563,8 +563,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #777;
 }
 /*---Button---*/
+ 
+.zoom img:hover {
+    transform: scale(1.15);
+  }
 .button {
-    background-color:rgb(200, 0, 0); 
+    background-color:rgb(49, 49, 49); 
     border: none;
     color: white;
     padding: 10px 25px;
@@ -572,6 +576,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 10px 0px;
 }
 .button-area {
     background: rgb(200, 0, 0);

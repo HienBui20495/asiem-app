@@ -7,27 +7,55 @@ module.exports = {
             title: "Manager Director",
         }
     },
-    getElectrical: () => {
+    getService: () => {
         return {
             data: [
                 {
                     img:"images/electric-tower.png", 
                     title: "ELECTRICAL DESIGN", 
-                    description:"Ut aliquam orci ac ullamcorper pellentesque. Ut aliquet, justo a porttitor pretium, velit lacus pretium nulla, sed auctor sem tortor nec urna."
+                    description:"Thiết kế bản vẽ hệ thống điện trong công nghiệp"
                 },
                 {
                     img:"images/Mechanical-gear.png",
                     title: "MECHANICAL DESIGN",
-                    description:"Ut aliquam orci ac ullamcorper pellentesque. Ut aliquet, justo a porttitor pretium, velit lacus pretium nulla, sed auctor sem tortor nec urna."
+                    description:"Thiết kế bản vẽ chi tiết máy móc hệ thống thiết bị công nghiệp."
                 },
                 {
-                    img:"images/Design-tablet.png",
-                    title: "GRAPHIC DESIGN",
-                    description:"Ut aliquam orci ac ullamcorper pellentesque. Ut aliquet, justo a porttitor pretium, velit lacus pretium nulla, sed auctor sem tortor nec urna."
+                    img:"images/Architecture.png",
+                    title: "ARCHITECTURE DESIGN",
+                    description:"Thiết kế kiến trúc, kết cấu, ngoại thất cho các công trình xây dựng"
                 }
             ]
         }
     },
+
+    getServiceItem: () => {
+        return [
+            [   
+                "Thiết kế bản vẽ sơ đồ lắp đặt điện",
+                "Thiết kế Sơ đồ bản vẽ điện",
+                "Thiết kế sơ đồ đi dây và đấu nối trong hệ thống điện",
+                "Thiết kế tủ điện",
+                "Thiết kế hệ thống chiếu sáng",
+                "Thiết kế bản vẽ chi tiết kỹ thuật lắp đặt các thiết bị điện",
+                "Giám sát thi công lắp đặt và vận hành hệ thống",
+                "Lập trình hệ thống PLC (HMI và CODE)",
+                "Bốc khối lượng dự án"
+            ],
+            [
+                "Thiết kế cơ khí công nghiệp",
+                "Thiết kế máy",
+                "Thiết kế bản vẽ layout và bản vẽ chi tiết CAD 2D và 3D",
+                "Thiết kế Bản mô tả chi tiết kỹ thuật"
+            ],
+            [
+                "Thiết kế bản vẽ thi công",
+                "Thiết kế bản vẽ lắp tấm trần",
+                "Thiết kế bản vẽ ngoại thất"
+            ]
+     ]
+    },
+
     getProject: () => {
         return {
             title: "Morbi eget elit nec velit lacinia dictum. Integer cursus purus in dui molestie eleifend. Proin laoreet faucibus rutrum. Sed ut ex at massa imperdiet porttitor vitae sed ante. Nam quis odio a nulla elementum maximus. Fusce blandit ullamcorper velit. Etiam sodales lectus mattis libero porttitor, sed porta lorem eleifend. Proin elit sapien, aliquam non porta vel, imperdiet a mauris. Nulla facilisi. Morbi egestas eleifend nisi sit amet ornare. In aliquam velit vel mauris facilisis, ut pharetra sem sagittis.",

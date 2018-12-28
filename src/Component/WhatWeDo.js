@@ -1,16 +1,38 @@
 import React from "react";
-import { Grid, Row, Col,Thumbnail, Button} from "react-bootstrap";
+import { Grid, Row, Col,Thumbnail, Popover, ButtonToolbar,OverlayTrigger, Button} from "react-bootstrap";
 import data from '../data';
 
 import '../Styles/Homepage.css';
 import '../Styles/General.css';
 
+class Detail extends React.Component {
+    buildContent(){
+        let content = [];
+        for(let i in this.props.data) {
+            content.push(<li key={i}>{this.props.data[i]}</li>)
+        }
+
+        return (<Popover><ul>{content}</ul></Popover>);
+    }
+    render() {
+        return (
+            <ButtonToolbar>
+                <OverlayTrigger trigger="click" placement="bottom" overlay={this.buildContent()}>
+                    <button className="button" bsStyle="primary" bsSize="large">See more details</button>
+                </OverlayTrigger>
+            </ButtonToolbar>
+        )
+    }
+}
+
 class Item extends React.Component {
     render(){
+        let _data = data.getServiceItem();
         return (
-            <Thumbnail src={this.props.data.img} alt="242x200">
+            <Thumbnail className="zoom" src={this.props.data.img} alt="242x200">
                 <h3>{this.props.data.title}</h3>
                 <p>{this.props.data.description}</p>
+                <Detail data={_data[this.props.index]}/>
             </Thumbnail>
         )
     }
@@ -19,19 +41,19 @@ class Item extends React.Component {
 
 class WhatWeDo extends React.Component {
     buildContent() {
-        let _data = data.getElectrical();
+        let _data = data.getService();
         let content=[];
        
         for(let i in _data.data) {
             content.push(
                     <Col className="service-box" key={i} md={4}>
-                        <Item data={_data.data[i]} />
+                        <Item index={i} data={_data.data[i]} />
                     </Col>
                )
         }
         
         return (<Grid>
-                    <Row className="d-flex justify-content-between">{content}</Row>
+                    <Row>{content}</Row>
                 </Grid>);
     }
     render() {
@@ -42,9 +64,9 @@ class WhatWeDo extends React.Component {
                     <span></span>
                 </div>
                 <div>
-                     {this.buildContent()}
+                    {this.buildContent()}
                 </div>
-              </div>
+            </div>
         )
     }
 }

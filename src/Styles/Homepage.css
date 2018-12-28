@@ -22,6 +22,10 @@
 }
 
 /*--What we do--*/
+.service {
+    padding: 100px;
+    background-color: rgb(240, 240, 240);
+}
 .service-box {
     width: 30%;
     padding: 25px !important;
@@ -31,5 +35,11 @@
     padding: 30px 10px;
 }
 .service-box .thumbnail:hover {
-    background-color: rgb(233, 232, 232);
+    background-color: rgb(255, 255, 255);
+}
+.thumbnail a>img, .thumbnail>img {
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
 }
