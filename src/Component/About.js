@@ -56,7 +56,7 @@ class About extends React.Component {
         let _data = data.getInfomation();
         let content=[];
         content.push(
-            <div>
+            <div key={1}>
                 <Grid className="about-blog">
                     <Row>
                         <Col sm={6} md={6}>
@@ -78,7 +78,7 @@ class About extends React.Component {
                                 <h2>{_data.author}</h2>
                                 <h4>{_data.title}</h4>
                             </div>
-                            <button className="button" bsStyle="primary" bsSize="large">See profile</button>
+                            <button className="button">See profile</button>
                         </Col>
                     </Row>
                 </Grid>

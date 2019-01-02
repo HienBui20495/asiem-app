@@ -12,13 +12,13 @@ class Detail extends React.Component {
             content.push(<li key={i}>{this.props.data[i]}</li>)
         }
 
-        return (<Popover><ul>{content}</ul></Popover>);
+        return (<Popover id ="popover"><ul>{content}</ul></Popover>);
     }
     render() {
         return (
             <ButtonToolbar>
                 <OverlayTrigger trigger="click" placement="bottom" overlay={this.buildContent()}>
-                    <button className="button" bsStyle="primary" bsSize="large">See more details</button>
+                    <button className="button">See more details</button>
                 </OverlayTrigger>
             </ButtonToolbar>
         )

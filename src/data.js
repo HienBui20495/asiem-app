@@ -58,31 +58,35 @@ module.exports = {
 
     getProject: () => {
         return {
-            title: "Morbi eget elit nec velit lacinia dictum. Integer cursus purus in dui molestie eleifend. Proin laoreet faucibus rutrum. Sed ut ex at massa imperdiet porttitor vitae sed ante. Nam quis odio a nulla elementum maximus. Fusce blandit ullamcorper velit. Etiam sodales lectus mattis libero porttitor, sed porta lorem eleifend. Proin elit sapien, aliquam non porta vel, imperdiet a mauris. Nulla facilisi. Morbi egestas eleifend nisi sit amet ornare. In aliquam velit vel mauris facilisis, ut pharetra sem sagittis.",
+            title: "Morbi eget elit nec velit lacinia dictum. Integer cursus purus in dui molestie eleifend. Sed mollis luctus placerat. Donec at est dapibus est hendrerit aliquet quis eu elit.",
             data: [
                 {
-                    title: "Donec aliquam et nunc fermentum luctus.",
-                    description: "",
-                    tag: "",
-                    date: ""
+                    name: "Donec aliquam et nunc.",
+                    description: "Mauris sollicitudin auctor velit non porta. Nulla aliquam magna tincidunt ligula luctus dictum.",
+                    tag: ["3D", "AutoCAD", "Electric", "BOM"],
+                    date: "2014-01-04",
+                    image: "images/project1.jpg"
                 },
                 {
-                    title: "Nulla ut dolor quis purus dignissim.",
-                    description: "",
-                    tag: "",
-                    date: ""
+                    name: "Nulla ut dolor quis.",
+                    description: " Curabitur commodo sit amet nulla suscipit laoreet. ",
+                    tag: ["AutoCAD", "3D", "Electrical", "HMI", "CODE"],
+                    date: "2015-12-14",
+                    image: "images/project2.jpg"
                 },
                 {
-                    title: "Aenean ac ullamcorper risus, nec dignissim neque.",
-                    description: "",
-                    tag: "",
-                    date: ""
+                    name: "Aenean ac ullamcorper risus.",
+                    description: "Aliquam aliquet et neque nec mattis. Proin ac nisi at dui consectetur ullamcorper.",
+                    tag: ["DeCAD", "Mechanical", "Machine parts"],
+                    date: "2017-8-30",
+                    image: "images/project3.jpg"
                 },
                 {
-                    title: "Pellentesque ut consequat felis.",
-                    description: "",
-                    tag: "",
-                    date: ""
+                    name: "Pellentesque ut.",
+                    description: "Vivamus sed tristique nulla, in volutpat nisi. Integer sit amet volutpat leo. ",
+                    tag:  ["3D", "AutoCAD", "Electric", "BOM"],
+                    date: "2017-04-20",
+                    image: "images/project4.jpg"
                 },
             ]
         }
