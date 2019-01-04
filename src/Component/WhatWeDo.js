@@ -29,7 +29,7 @@ class Item extends React.Component {
     render(){
         let _data = data.getServiceItem();
         return (
-            <Thumbnail className="zoom" src={this.props.data.img} alt="242x200">
+            <Thumbnail src={this.props.data.img} alt="242x200">
                 <h3>{this.props.data.title}</h3>
                 <p>{this.props.data.description}</p>
                 <Detail data={_data[this.props.index]}/>

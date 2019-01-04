@@ -94,8 +94,8 @@ td, th {
 .fsi {
     font-style: italic;
 }
-.mt-0 {
-    margin-top: 0px;
+.m-0 {
+    margin:0px;
 }
 .mt-10 {
     margin-top: 10px;
@@ -485,15 +485,15 @@ td, th {
 .overflow-hidden {
     overflow: hidden;
 }
-.overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
 .container.fullwidth {
     width: 100%;
+}
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    height: 40px;
 }
 .container.no-padding {
     padding-left: 0;
@@ -562,11 +562,24 @@ h1, h2, h3, h4, h5, h6 {
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
     color: #777;
 }
+a {
+    color: rgb(200,0,0) !important;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
 /*---Button---*/
- 
+.zoom {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+}
 .zoom img:hover {
     transform: scale(1.15);
-  }
+}
 .button {
     background-color:rgb(49, 49, 49); 
     border: none;
