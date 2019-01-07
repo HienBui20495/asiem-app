@@ -48,10 +48,10 @@ class Header extends React.Component {
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Nav>
-                        <NavItem eventKey={1} href="#">
+                        <NavItem eventKey={1} className="scroll" href="#about">
                         ABOUT
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
+                        <NavItem eventKey={2} className="scroll" href="#service">
                         SERVICE
                         </NavItem>
                         <NavDropdown eventKey={3} title="EXPERIENCE" id="basic-nav-dropdown">

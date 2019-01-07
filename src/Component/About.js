@@ -89,7 +89,7 @@ class About extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div id="about">
                 {this.buildWelcome()}
                 {this.buildAbout()}
             </div>

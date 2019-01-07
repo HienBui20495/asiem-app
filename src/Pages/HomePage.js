@@ -5,6 +5,7 @@ import Carousel from '../Component/Carousel';
 import About from "../Component/About"
 import WhatWeDo from '../Component/WhatWeDo';
 import Project from '../Component/Project';
+import News from '../Component/News';
 
 import '../Styles/Homepage.css';
 
@@ -17,6 +18,7 @@ class HomePage extends React.Component {
         content.push(<About key='2'/>)
         content.push(<WhatWeDo key='3'/>)
         content.push(<Project key='4'/>)
+        content.push(<News key='5'/>)
         return content;
     }
     render() {

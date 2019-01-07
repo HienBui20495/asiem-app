@@ -88,7 +88,6 @@ module.exports = {
                     date: "2017-04-20",
                     image: "images/project4.jpg"
                 },
-
                 {
                     name: "Donec aliquam et nunc.",
                     description: "Mauris sollicitudin auctor velit non porta. Nulla aliquam magna tincidunt ligula luctus dictum.",
@@ -116,6 +115,48 @@ module.exports = {
                     tag: ["DeCAD", "Mechanical", "Machine parts"],
                     date: "2017-8-30",
                     image: "images/project3.jpg"
+                },
+                {
+                    name: "Aenean ac ullamcorper risus.",
+                    description: "Aliquam aliquet et neque nec mattis. Proin ac nisi at dui consectetur ullamcorper.",
+                    tag: ["DeCAD", "Mechanical", "Machine parts"],
+                    date: "2017-8-30",
+                    image: "images/project3.jpg"
+                },
+                {
+                    name: "Aenean ac ullamcorper risus.",
+                    description: "Aliquam aliquet et neque nec mattis. Proin ac nisi at dui consectetur ullamcorper.",
+                    tag: ["DeCAD", "Mechanical", "Machine parts"],
+                    date: "2017-8-30",
+                    image: "images/project3.jpg"
+                },
+                {
+                    name: "Donec aliquam et nunc.",
+                    description: "Mauris sollicitudin auctor velit non porta. Nulla aliquam magna tincidunt ligula luctus dictum.",
+                    tag: ["3D", "AutoCAD", "Electric", "BOM"],
+                    date: "2014-01-04",
+                    image: "images/project1.jpg"
+                },
+                {
+                    name: "Nulla ut dolor quis.",
+                    description: " Curabitur commodo sit amet nulla suscipit laoreet. ",
+                    tag: ["AutoCAD", "3D", "Electrical", "HMI", "CODE"],
+                    date: "2015-12-14",
+                    image: "images/project2.jpg"
+                },
+                {
+                    name: "Donec aliquam et nunc.",
+                    description: "Mauris sollicitudin auctor velit non porta. Nulla aliquam magna tincidunt ligula luctus dictum.",
+                    tag: ["3D", "AutoCAD", "Electric", "BOM"],
+                    date: "2014-01-04",
+                    image: "images/project1.jpg"
+                },
+                {
+                    name: "Nulla ut dolor quis.",
+                    description: " Curabitur commodo sit amet nulla suscipit laoreet. ",
+                    tag: ["AutoCAD", "3D", "Electrical", "HMI", "CODE"],
+                    date: "2015-12-14",
+                    image: "images/project2.jpg"
                 },
             ]
         }

@@ -23,6 +23,7 @@
 
 /*--What we do--*/
 .service {
+    height: 70vh;
     padding: 100px;
     background-color: rgb(240, 240, 240);
 }
@@ -89,13 +90,17 @@
     text-align: left;
 }
 .overlay:hover .project_image {
-    opacity: 0.3;
+    opacity: 0;
   }
   
 .overlay:hover .middle {
     opacity: 1;
 }
 .label-default {
-    background-color: #b6001f !important;
+     background-color: #b6001f !important;
 }
-  
+/*---New---*/
+.news {
+    padding: 100px;
+    background-color: #f2f2f2;
+}

@@ -52,17 +52,14 @@ class WhatWeDo extends React.Component {
                )
         }
         
-        return (<Grid>
+        return (<Grid fluid>
                     <Row>{content}</Row>
                 </Grid>);
     }
     render() {
         return (
-            <div className="service">
-                <div>
-                    <h1>What we do</h1>
-                    <span></span>
-                </div>
+            <div className="service" id="service">
+                <div><h1>WHAT WE DO</h1></div>
                 <div>
                     {this.buildContent()}
                 </div>

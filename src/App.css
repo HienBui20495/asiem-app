@@ -30,3 +30,19 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-default .navbar-nav>.active>a{
+  background-color: red !important;
+}
+.carousel-control.right {
+  background-image: none !important;
+}
+.carousel-control.left {
+  background-image: none !important;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next a{
+  color: white !important;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-next a{
+  color: white !important;
+}
