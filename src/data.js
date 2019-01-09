@@ -160,5 +160,32 @@ module.exports = {
                 },
             ]
         }
+    },
+    getNews: () => {
+        return {
+            data: [
+                {   
+                    img: "images/news1.png",
+                    date: "MAY 4, 2018",
+                    title: "Sed risus tortor, dignissim id tortor sit amet",
+                    tag: ["DeCAD", "Mechanical", "Machine parts"],
+                    author: "admin",
+                },
+                {   
+                    img: "images/news2.png",
+                    date: "JUNE 2, 2018",
+                    title: "Class aptent taciti sociosqu ad litora torquent per conubia",
+                    tag: ["3D", "AutoCAD", "Electric", "BOM"],
+                    author: "admin",
+                },
+                {   
+                    img: "images/news3.png",
+                    date: "DECEMBER 14, 2018",
+                    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                    tag: ["AutoCAD", "3D", "Electrical", "HMI", "CODE"],
+                    author: "admin",
+                },
+            ]
+        }
     }
 };

@@ -38,10 +38,10 @@
 .service-box .thumbnail:hover {
     background-color: rgb(255, 255, 255);
 }
-.thumbnail {
+.service-box .thumbnail {
     overflow: hidden;
 }
-.thumbnail a>img, .thumbnail>img {
+.service-box .thumbnail a>img, .thumbnail>img {
     border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
@@ -50,7 +50,7 @@
     background-position: center;
     transition: all 0.5s ease;
 }
-.thumbnail:hover {
+.service-box .thumbnail:hover {
     transform: scale(1.1);
 }
 /*----project ----*/
@@ -97,10 +97,29 @@
     opacity: 1;
 }
 .label-default {
-     background-color: #b6001f !important;
+     background-color: #979797 !important;
 }
-/*---New---*/
+/*---News---*/
 .news {
     padding: 100px;
     background-color: #f2f2f2;
+}
+.thumbnail {
+    border: none !important;
+    border-radius: none;
+    -webkit-box-shadow: -1px 10px 65px -20px rgba(0,0,0,0.34) !important;
+    -moz-box-shadow: -1px 10px 65px -20px rgba(0,0,0,0.34) !important;
+    box-shadow: -1px 10px 65px -20px rgba(0,0,0,0.34) !important;
+}
+.news-box .thumbnail a>img, .news-box .thumbnail>img {
+    border-radius: 0% !important;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100% !important;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+.news-box .thumbnail{
+    padding: 0%;
 }

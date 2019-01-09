@@ -59,7 +59,7 @@ class WhatWeDo extends React.Component {
     render() {
         return (
             <div className="service" id="service">
-                <div><h1>WHAT WE DO</h1></div>
+                <div><h2>WHAT WE DO</h2></div>
                 <div>
                     {this.buildContent()}
                 </div>

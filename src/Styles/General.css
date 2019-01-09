@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em !important;
     margin-bottom: 0;
     margin-top: 0;
-    font-weight: 700;
+    font-weight: 900;
 }
 .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0;
@@ -17,15 +17,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
 }
 h1, .h1 {
-    font-size: 36px;
+    font-size: 26px;
     text-transform: uppercase;
 }
 h2, .h2 {
-    font-size: 30px;
+    font-size: 24px;
     text-transform: uppercase;
 }
 h3, .h3 {
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 h4, .h4 {

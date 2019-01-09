@@ -62,7 +62,7 @@ class Header extends React.Component {
                         <MenuItem eventKey={3.4}>Advertising Design</MenuItem>
                         </NavDropdown>
                         <NavItem eventKey={1} href="#">
-                        LASTED NEW
+                        LASTED NEWS
                         </NavItem>
                         <NavItem eventKey={1} href="#">
                         CONTACT

@@ -75,8 +75,8 @@ class About extends React.Component {
                                 <FontAwesomeIcon className="fz-30" icon={faQuoteRight}></FontAwesomeIcon>
                             </div>
                             <div className="mb-10">
-                                <h2>{_data.author}</h2>
-                                <h4>{_data.title}</h4>
+                                <h4>{_data.author}</h4>
+                                <h5>{_data.title}</h5>
                             </div>
                             <button className="button">See profile</button>
                         </Col>

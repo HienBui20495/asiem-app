@@ -1,59 +1,56 @@
 import React from "react";
-import { Grid, Row, Col,Thumbnail, Button} from "react-bootstrap";
+import { Grid, Row, Col,Thumbnail, Button, Label} from "react-bootstrap";
 
 import '../Styles/Homepage.css';
 import '../Styles/General.css';
 
-class News extends React.Component {
-    buildNewsItem() {
-        let content =[]
-        content.push(
-            <Grid>
-            <Row>
-                <Col xs={6} md={4}>
-                <Thumbnail src="/thumbnaildiv.png" alt="242x200">
-                    <h3>Thumbnail label</h3>
-                    <p>Description</p>
-                    <p>
-                    <Button bsStyle="primary">Button</Button>
-                    &nbsp;
-                    <Button bsStyle="default">Button</Button>
-                    </p>
-                </Thumbnail>
-                </Col>
-                <Col xs={6} md={4}>
-                <Thumbnail src="/thumbnaildiv.png" alt="242x200">
-                    <h3>Thumbnail label</h3>
-                    <p>Description</p>
-                    <p>
-                    <Button bsStyle="primary">Button</Button>
-                    &nbsp;
-                    <Button bsStyle="default">Button</Button>
-                    </p>
-                </Thumbnail>
-                </Col>
-                <Col xs={6} md={4}>
-                <Thumbnail src="/thumbnaildiv.png" alt="242x200">
-                    <h3>Thumbnail label</h3>
-                    <p>Description</p>
-                    <p>
-                    <Button bsStyle="primary">Button</Button>
-                    &nbsp;
-                    <Button bsStyle="default">Button</Button>
-                    </p>
-                </Thumbnail>
-                </Col>
-            </Row>
-        </Grid>
+import data from '../data';
+
+
+class NewsItem extends React.Component {
+    buildContent() {
+        let content =[];
+
+        for(let i in this.props.data.tag) {
+            content.push(<Label bsStyle="default" className="mr-5 mt-20" key ={i}>{this.props.data.tag[i]}</Label>)
+        }
+        return (
+            <Thumbnail src={this.props.data.img} alt="242x200">
+                <p className="text-left mt-20">{this.props.data.date}</p>
+                <h4 className="text-left mt-20">{this.props.data.title}</h4>
+                <div className="text-left mt-20">{content}</div>
+                <div className="text-left mt-20"><p>{this.props.data.author}</p></div>
+            </Thumbnail>
         )
-        return content;
+    }
+    render() {
+        return this.buildContent();
+
+    }
+}
+
+class News extends React.Component {
+    buildNews() {
+        let _data = data.getNews();
+        let content =[];
+        for(let i in _data.data) {
+            content.push(
+                    <Col className="news-box" key={i} xs={6} md={4}>
+                        <NewsItem index={i} data={_data.data[i]} />
+                    </Col>
+               )
+        }
+        return (
+            <Grid><Row> {content} </Row> </Grid>
+        );
     }
     
     render() {
         return (
             <div className="news">
-               <div><h1>LASTEST NEWS</h1></div>
-               {this.buildNewsItem()}
+               <div><h2>LASTEST NEWS</h2></div>
+               <p className="fz-17 mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               {this.buildNews()}
             </div>
         )
     }
