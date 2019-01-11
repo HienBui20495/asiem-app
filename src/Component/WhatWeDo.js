@@ -58,12 +58,22 @@ class WhatWeDo extends React.Component {
     }
     render() {
         return (
-            <div className="service" id="service">
-                <div><h2>WHAT WE DO</h2></div>
-                <div>
-                    {this.buildContent()}
+            <div>
+                <div className="service" id="service">
+                    <div><h2>WHAT WE DO</h2></div>
+                    <div>
+                        {this.buildContent()}
+                    </div>
+                </div>
+                <div className="parallax_1">
+                    <div className="fz-18 text-center parallax-text typography h5"><strong>
+                        "Donec eleifend pharetra sapien, eu laoreet dui ullamcorper sed. Praesent tempor lectus id orci dapibus, non consectetur nunc venenatis. Maecenas ut ornare nunc, et lobortis felis. Integer a fermentum elit."
+                        Morbi eget elit nec velit lacinia dictum. Integer cursus purus in dui molestie eleifend. Sed mollis luctus placerat. Donec at est dapibus est hendrerit aliquet quis eu elit.</strong></div>                    
+                    <h3>AKIRA HONDA</h3>
+                    <p className="fz-18">-Managment Director-</p>
                 </div>
             </div>
+
         )
     }
 }

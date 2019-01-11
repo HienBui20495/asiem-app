@@ -80,7 +80,7 @@ class Project extends React.Component {
         if(rowContent.length > count) {
             carouselContainer.push(
                 <Carousel.Item key={"lastrow"}>
-                    <Grid className="project-content">
+                    <Grid fluid className="project-content">
                         {rowContent[count]}
                     </Grid>
                 </Carousel.Item>
@@ -104,6 +104,7 @@ class Project extends React.Component {
                     <a className="mr-10">ARCHITECTURE</a>
                </div>
                 {this.buildProject()}
+                <div class="parallax_2"></div>
             </div>
         )
     }

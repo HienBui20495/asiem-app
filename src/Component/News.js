@@ -16,10 +16,10 @@ class NewsItem extends React.Component {
         }
         return (
             <Thumbnail src={this.props.data.img} alt="242x200">
-                <p className="text-left mt-20">{this.props.data.date}</p>
-                <h4 className="text-left mt-20">{this.props.data.title}</h4>
-                <div className="text-left mt-20">{content}</div>
-                <div className="text-left mt-20"><p>{this.props.data.author}</p></div>
+                <p className="text-left mt-20 ml-5">{this.props.data.date}</p>
+                <h4 className="text-left mt-20 ml-5">{this.props.data.title}</h4>
+                <div className="text-left mt-20 ml-5">{content}</div>
+                <div className="text-left mt-20 ml-5"><p>{this.props.data.author}</p></div>
             </Thumbnail>
         )
     }

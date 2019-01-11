@@ -2,7 +2,7 @@
 
 .carousel-image {
     width: 100%;
-    height: 650px !important;
+    height: 90% !important;
 }
 
 /*--About--*/
@@ -68,7 +68,9 @@
     backface-visibility: hidden;
 }
 .project {
-    padding: 100px 0px;
+    width: 100%;
+    padding:50px 0px 0px 0px;
+    background-color: white;
 }
 
 .project-title {
@@ -101,7 +103,7 @@
 }
 /*---News---*/
 .news {
-    padding: 100px;
+    padding: 100px 0px;
     background-color: #f2f2f2;
 }
 .thumbnail {
@@ -122,4 +124,35 @@
 }
 .news-box .thumbnail{
     padding: 0%;
+}
+/*--Parallax--*/
+.parallax_1 {
+    background-color: #333333ab;
+    background-image: url('/images/thomas-kelley-74096-unsplash.jpg');
+    background-attachment: fixed;
+    min-height:100%;
+    height: 300px;
+    padding: 100px 0px 300px 0px;
+    background-repeat: round;
+    background-blend-mode: overlay;
+    color:white;
+}
+.parallax-text {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+}
+.parallax_2 {
+    background-color: #333333ab;
+    background-image: url('/images/adi-goldstein-693566-unsplash.jpg');
+    background-attachment: fixed;
+    min-height:100%;
+    height: 70vh;
+    padding: 100px 0px 300px 0px;
+    background-repeat: round;
+    background-blend-mode: overlay;
+    color:white;
 }

@@ -16,7 +16,8 @@ class HomePage extends React.Component {
         let content=[];
         content.push(<Carousel key='1' />)
         content.push(<About key='2'/>)
-        content.push(<WhatWeDo key='3'/>)
+        content.push(<WhatWeDo key='3'/>);
+        //content.push(<div key="4" className="parallax_1"><Project key='4'/><News key='5'/></div>)
         content.push(<Project key='4'/>)
         content.push(<News key='5'/>)
         return content;

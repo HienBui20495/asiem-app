@@ -47,7 +47,7 @@ class Header extends React.Component {
                             <a href="#home"><img src="images/logo.png"/></a>
                         </Navbar.Brand>
                     </Navbar.Header>
-                    <Nav>
+                    <Nav pullRight>
                         <NavItem eventKey={1} className="scroll" href="#about">
                         ABOUT
                         </NavItem>

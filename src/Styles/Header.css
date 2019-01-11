@@ -56,11 +56,14 @@
 div.header-top {
     height: 30px;
 }
-
+.navbar-brand>img {
+    display: block;
+    width: 125px !important;
+}
 /*----Main Header----*/
 .main-header {
-    height: 70px;
-    background-color:#29292999 !important;
+    height: 50px;
+    background-color: #333333bd !important;
     width: 100% !important;
     background-image: none !important;
     border:0 !important;
@@ -74,4 +77,9 @@ div.header-top {
         padding: 5px !important;
     }
 }
-
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background-image: linear-gradient(to bottom,#b6001f,#b6001f 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdbdbdb', endColorstr='#ffe2e2e2', GradientType=0);
+    background-repeat: repeat-x;
+    box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
+}
