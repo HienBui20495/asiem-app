@@ -41,33 +41,36 @@ class Header extends React.Component {
         return (
             <div className="header">
                 {this.buidTopHeader()}
-                <Navbar className="main-header">
-                    <Navbar.Header>
-                        <Navbar.Brand>
-                            <a href="#home"><img src="images/logo.png"/></a>
-                        </Navbar.Brand>
-                    </Navbar.Header>
-                    <Nav pullRight>
-                        <NavItem eventKey={1} className="scroll" href="#about">
-                        ABOUT
-                        </NavItem>
-                        <NavItem eventKey={2} className="scroll" href="#service">
-                        SERVICE
-                        </NavItem>
-                        <NavDropdown eventKey={3} title="EXPERIENCE" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Electrical Design</MenuItem>
-                        <MenuItem eventKey={3.2}>Mechanical Design</MenuItem>
-                        <MenuItem eventKey={3.3}>Archhitecture Design</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey={3.4}>Advertising Design</MenuItem>
-                        </NavDropdown>
-                        <NavItem eventKey={1} href="#">
-                        LASTED NEWS
-                        </NavItem>
-                        <NavItem eventKey={1} href="#">
-                        CONTACT
-                        </NavItem>
-                    </Nav>
+                <Navbar inverse collapseOnSelect className="main-header">
+                        <Navbar.Header>
+                            <Navbar.Brand>
+                                <a href="#home"><img src="images/logo.png"/></a>
+                            </Navbar.Brand>
+                    <Navbar.Toggle />
+                        </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav pullRight>
+                            <NavItem eventKey={1} className="scroll" href="#about">
+                            ABOUT
+                            </NavItem>
+                            <NavItem eventKey={2} className="scroll" href="#service">
+                            SERVICE
+                            </NavItem>
+                            <NavDropdown eventKey={3} title="EXPERIENCE" id="basic-nav-dropdown">
+                            <MenuItem eventKey={3.1}>Electrical Design</MenuItem>
+                            <MenuItem eventKey={3.2}>Mechanical Design</MenuItem>
+                            <MenuItem eventKey={3.3}>Archhitecture Design</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={3.4}>Advertising Design</MenuItem>
+                            </NavDropdown>
+                            <NavItem eventKey={1} href="#">
+                            LASTED NEWS
+                            </NavItem>
+                            <NavItem eventKey={1} href="#">
+                            CONTACT
+                            </NavItem>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
             </div>
         )
