@@ -44,7 +44,7 @@ class Header extends React.Component {
                 <Navbar inverse collapseOnSelect className="main-header">
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <a className="scroll" href="#logo"><img src="images/logo.png"/></a>
+                                <a className="scroll" href="#logo"><img src="images/Logo.png"/></a>
                             </Navbar.Brand>
                     <Navbar.Toggle />
                         </Navbar.Header>

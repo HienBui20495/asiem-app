@@ -1,7 +1,7 @@
 import React from "react";
 
-import '../Styles/demo.css';
-import '../Styles/footer-distributed-with-address-and-phones.css';
+import '../Styles/Homepage.css';
+import '../Styles/General.css';
 
 class Footer extends React.Component {
     render() {
@@ -12,7 +12,7 @@ class Footer extends React.Component {
 
                     <div class="footer-left">
 
-                        <a href="#home"><img src="images/logo.png"/></a>
+                        <a href="#home"><img src="images/Logo.png"/></a>
 
                         <p class="footer-links">
                             <a href="#">Home</a>
