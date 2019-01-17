@@ -47,7 +47,7 @@ class News extends React.Component {
     
     render() {
         return (
-            <div className="news">
+            <div className="news" id="news">
                <div><h2>LASTEST NEWS</h2></div>
                <p className="fz-17 mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                {this.buildNews()}

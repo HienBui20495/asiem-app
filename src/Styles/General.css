@@ -505,8 +505,8 @@ td, th {
 .no-padding {
     padding: 0;
 }
-.section-bg {
-    background: #f9fafc;
+.section-text {
+    color: #2e2e2e;
 }
 @media (max-width: 767px) {
     .no-flex-xs {
@@ -563,13 +563,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5em;
 }
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
-    color: #777;
+    color: rgb(24, 24, 24);
+    font-size: 30px;
 }
+
 a {
-    color: rgb(200,0,0) !important;
+    color: rgb(255, 255, 255) !important;
     text-decoration: none;
 }
 a:hover {
+    color: rgb(200, 0, 0) !important;
     text-decoration: none;
 }
 /*---Button---*/

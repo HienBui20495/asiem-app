@@ -44,7 +44,7 @@ class Header extends React.Component {
                 <Navbar inverse collapseOnSelect className="main-header">
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <a href="#home"><img src="images/logo.png"/></a>
+                                <a className="scroll" href="#logo"><img src="images/logo.png"/></a>
                             </Navbar.Brand>
                     <Navbar.Toggle />
                         </Navbar.Header>
@@ -56,17 +56,17 @@ class Header extends React.Component {
                             <NavItem eventKey={2} className="scroll" href="#service">
                             SERVICE
                             </NavItem>
-                            <NavDropdown eventKey={3} title="EXPERIENCE" id="basic-nav-dropdown">
+                            <NavDropdown className="scroll" href="#experience" eventKey={3} title="EXPERIENCE">
                             <MenuItem eventKey={3.1}>Electrical Design</MenuItem>
                             <MenuItem eventKey={3.2}>Mechanical Design</MenuItem>
                             <MenuItem eventKey={3.3}>Archhitecture Design</MenuItem>
                             <MenuItem divider />
                             <MenuItem eventKey={3.4}>Advertising Design</MenuItem>
                             </NavDropdown>
-                            <NavItem eventKey={1} href="#">
+                            <NavItem className="scroll" href="#news" eventKey={1}>
                             LASTED NEWS
                             </NavItem>
-                            <NavItem eventKey={1} href="#">
+                            <NavItem className="scroll" href="#contact" eventKey={1}>
                             CONTACT
                             </NavItem>
                         </Nav>

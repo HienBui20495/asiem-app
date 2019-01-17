@@ -95,14 +95,9 @@ class Project extends React.Component {
     render() {
         let _data = data.getProject();
         return (
-            <div className="project">
+            <div className="project" id="experience">
                 <h2>OUR PROJECT</h2>
                 <div className="fz-17 mb-50 project-title text-center">{_data.title}</div>
-                <div className="mt-20 d-flex justify-content-center">
-                    <a className="mr-10">ELECTRICAL</a>
-                    <a className="mr-10">MECALNICAL</a>
-                    <a className="mr-10">ARCHITECTURE</a>
-               </div>
                 {this.buildProject()}
                 <div class="parallax_2"></div>
             </div>

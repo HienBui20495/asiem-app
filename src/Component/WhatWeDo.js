@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Row, Col,Thumbnail, Popover, ButtonToolbar,OverlayTrigger, Button} from "react-bootstrap";
+import { Grid, Row, Col,Thumbnail, Popover, ButtonToolbar,OverlayTrigger} from "react-bootstrap";
 import data from '../data';
 
 import '../Styles/Homepage.css';
